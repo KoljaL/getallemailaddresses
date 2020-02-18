@@ -1,6 +1,4 @@
 # getallemailaddresses
 Extract all Emailaddresses from a Mailbox
 
-![Schreenshot](Screenshot.png)
- 
-
+![](https://raw.githubusercontent.com/KoljaL/getallemailaddresses/master/screenshot.png)
