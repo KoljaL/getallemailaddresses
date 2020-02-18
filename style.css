@@ -1,0 +1,336 @@
+
+
+body {
+	font-family: sans-serif;
+}
+
+td {
+	white-space: nowrap;
+	padding-left: 10;
+}
+
+.table {
+	margin-top: 40;
+}
+
+.ck-button label span {
+	margin: 4px;
+	background-color: #EFEFEF;
+	border-radius: 6px;
+	border: 1px solid #D0D0D0;
+	overflow: auto;
+	float: left;
+	cursor: pointer;
+	text-align: center;
+	padding: 10px 10px;
+	display: block;
+}
+
+.ck-button:hover {
+	color: #000;
+	background-color: #fff;
+	border-color: #01549b;
+}
+
+.ck-button label input {
+	position: absolute;
+	top: -20px;
+}
+
+.ck-button input:checked+span {
+	background-color: #911;
+	color: #fff;
+}
+
+
+/* .has-float-label input::placeholder{
+  color: green;
+} */
+
+.has-float-label span {
+	color: black;
+}
+
+.btn:hover {
+	color: #fff;
+	background-color: #025aa5;
+	border-color: #01549b;
+}
+
+.btn {
+	margin: 4px;
+	border-radius: 4px;
+	overflow: auto;
+	border: 1px solid #0275d8;
+	padding: 10px 10px;
+	color: #fff;
+	background-color: #0275d8;
+	display: inline-block;
+	font-weight: 400;
+	line-height: 1.25;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.panic {
+	margin-left: 60;
+}
+
+.info_out {
+	display: inline;
+	margin-left: 10;
+	margin-top: 50;
+}
+
+.info {
+	margin-right: 80;
+	display: inline;
+}
+
+.has-float-label {
+	display: inline-block;
+	position: relative;
+	margin-right: 30;
+}
+
+.has-float-label label,
+.has-float-label>span {
+	position: absolute;
+	left: 0;
+	top: 0;
+	cursor: text;
+	font-size: 75%;
+	opacity: 1;
+	-webkit-transition: all .2s;
+	transition: all .2s
+}
+
+.has-float-label select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none
+}
+
+.has-float-label textarea {
+	width: 100%
+}
+
+.has-float-label input,
+.has-float-label select,
+.has-float-label textarea {
+	font-size: inherit;
+	padding-top: 1em;
+	margin-bottom: 2px;
+	border: 0;
+	border-radius: 0;
+	border-bottom: 3px solid rgba(0, 0, 0, .5)
+}
+
+.has-float-label input::-webkit-input-placeholder,
+.has-float-label select::-webkit-input-placeholder,
+.has-float-label textarea::-webkit-input-placeholder {
+	opacity: 0.5;
+	-webkit-transition: all .2s;
+	transition: all .2s
+}
+
+.has-float-label input::-moz-placeholder,
+.has-float-label select::-moz-placeholder,
+.has-float-label textarea::-moz-placeholder {
+	opacity: 0.5;
+	transition: all .2s
+}
+
+.has-float-label input:-ms-input-placeholder,
+.has-float-label select:-ms-input-placeholder,
+.has-float-label textarea:-ms-input-placeholder {
+	opacity: 0.5;
+	transition: all .2s
+}
+
+.has-float-label input::placeholder,
+.has-float-label select::placeholder,
+.has-float-label textarea::placeholder {
+	opacity: 0.5;
+	-webkit-transition: all .2s;
+	transition: all .2s
+}
+
+.has-float-label input:placeholder-shown:not(:focus)::-webkit-input-placeholder,
+.has-float-label select:placeholder-shown:not(:focus)::-webkit-input-placeholder,
+.has-float-label textarea:placeholder-shown:not(:focus)::-webkit-input-placeholder {
+	opacity: 0
+}
+
+.has-float-label input:placeholder-shown:not(:focus)::-moz-placeholder,
+.has-float-label select:placeholder-shown:not(:focus)::-moz-placeholder,
+.has-float-label textarea:placeholder-shown:not(:focus)::-moz-placeholder {
+	opacity: 0
+}
+
+.has-float-label input:placeholder-shown:not(:focus):-ms-input-placeholder,
+.has-float-label select:placeholder-shown:not(:focus):-ms-input-placeholder,
+.has-float-label textarea:placeholder-shown:not(:focus):-ms-input-placeholder {
+	opacity: 0
+}
+
+.has-float-label input:placeholder-shown:not(:focus)::placeholder,
+.has-float-label select:placeholder-shown:not(:focus)::placeholder,
+.has-float-label textarea:placeholder-shown:not(:focus)::placeholder {
+	opacity: 0
+}
+
+.has-float-label input:placeholder-shown:not(:focus)+*,
+.has-float-label select:placeholder-shown:not(:focus)+*,
+.has-float-label textarea:placeholder-shown:not(:focus)+* {
+	font-size: 150%;
+	opacity: .8;
+	top: .25em
+}
+
+.has-float-label input:focus,
+.has-float-label select:focus,
+.has-float-label textarea:focus {
+	outline: 0;
+	border-color: rgba(0, 0, 0, .5)
+}
+
+
+/* .has-float-label select {
+	padding-right: 1em;
+	background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .5em bottom .25em;
+	background-size: 8px 10px
+} */
+
+.checkbox label .toggle,
+.checkbox-inline .toggle {
+	margin-left: -20px;
+	margin-right: 5px
+}
+
+.toggle {
+	position: relative;
+	overflow: hidden
+}
+
+.toggle input[type=checkbox] {
+	display: none
+}
+
+.toggle-group {
+	position: absolute;
+	width: 200%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	transition: left .35s;
+	-webkit-transition: left .35s;
+	-moz-user-select: none;
+	-webkit-user-select: none
+}
+
+.toggle.off .toggle-group {
+	left: -100%
+}
+
+.toggle-on {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 50%;
+	margin: 0;
+	border: 0;
+	border-radius: 0
+}
+
+.toggle-off {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	right: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 0
+}
+
+.toggle-handle {
+	position: relative;
+	margin: 0 auto;
+	padding-top: 0;
+	padding-bottom: 0;
+	height: 100%;
+	width: 0;
+	border-width: 0 1px
+}
+
+.toggle.btn {
+	min-width: 59px;
+	min-height: 34px
+}
+
+.toggle-on.btn {
+	padding-right: 24px
+}
+
+.toggle-off.btn {
+	padding-left: 24px
+}
+
+.toggle.btn-lg {
+	min-width: 79px;
+	min-height: 45px
+}
+
+.toggle-on.btn-lg {
+	padding-right: 31px
+}
+
+.toggle-off.btn-lg {
+	padding-left: 31px
+}
+
+.toggle-handle.btn-lg {
+	width: 40px
+}
+
+.toggle.btn-sm {
+	min-width: 50px;
+	min-height: 30px
+}
+
+.toggle-on.btn-sm {
+	padding-right: 20px
+}
+
+.toggle-off.btn-sm {
+	padding-left: 20px
+}
+
+.toggle.btn-xs {
+	min-width: 35px;
+	min-height: 22px
+}
+
+.toggle-on.btn-xs {
+	padding-right: 12px
+}
+
+.toggle-off.btn-xs {
+	padding-left: 12px
+}
+
+.hide_if_no_JS_hide {
+	display: none;
+}
+
+.hide_if_no_JS_show {
+	display: inline;
+}
